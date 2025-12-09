@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* 强制亮色模式，防止系统深色模式干扰 */
+  color-scheme: light;
+  background-color: #f8fafc; /* 极浅的蓝灰色背景 */
+  color: #1e293b; /* 深蓝灰色文字 */
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+/* 滚动条美化（可选，蓝白风格） */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
